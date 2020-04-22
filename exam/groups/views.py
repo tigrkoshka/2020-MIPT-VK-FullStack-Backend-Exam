@@ -48,7 +48,7 @@ def join_group(request):
 def leave_group(request):
     if request.POST.get('username') and request.POST.get('group_id'):
         username = request.POST.get('username')
-        group_name = request.POST.get('group_id')
+        group_id = request.POST.get('group_id')
         user = get_object_or_404(User.objects.all(), username=username)
         group = get_object_or_404(Group.objects.all(), id=group_id)
 
