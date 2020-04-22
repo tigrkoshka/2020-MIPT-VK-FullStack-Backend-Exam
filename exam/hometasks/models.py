@@ -12,7 +12,7 @@ class Hometask(models.Model):
 	class Meta:
 		verbose_name = 'Задание'
 		verbose_name_plural = 'Задания'
-		
+
 
 class UserHometask(models.Model):
 	ASSIGNED = "A"
