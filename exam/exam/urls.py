@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from groups import views
 
@@ -24,4 +24,7 @@ urlpatterns = [
     path('join_group/', views.join_group),
     path('leave_group/', views.leave_group),
     path('group_list/', views.group_list),
+    path('groups/', include('groups.urls')),
+    path('users/', include('users.urls')),
+    path('hometasks/', include('hometasks.urls')),
 ]
