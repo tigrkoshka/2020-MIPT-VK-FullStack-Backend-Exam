@@ -7,7 +7,9 @@ from users.models import User
 class Hometask(models.Model):
 	group = models.ForeignKey(Group, on_delete=models.CASCADE, verbose_name='Задание')
 	description = models.TextField(blank=True, null=True, verbose_name="Описание")
+	name = models.CharField(blank=False, max_length=100, null=False, verbose_name='Имя файла')
 	file = models.FileField(blank=True, null=True, verbose_name="Файл с заданием")
+	type = models.CharField(max_length=100, blank=False, verbose_name='Тип')
 	
 	class Meta:
 		verbose_name = 'Задание'

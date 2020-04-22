@@ -25,6 +25,6 @@ urlpatterns = [
     path('leave_group/', views.leave_group),
     path('group_list/', views.group_list),
     path('groups/', include('groups.urls')),
-    path('users/', include('users.urls')),
+    # path('users/', include('users.urls')),
     path('hometasks/', include('hometasks.urls')),
 ]
