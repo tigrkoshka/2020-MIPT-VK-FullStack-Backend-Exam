@@ -36,6 +36,7 @@ isort==4.3.21
 jmespath==0.9.5
 kombu==4.6.8
 lazy-object-proxy==1.4.3
+libmagic==1.0
 loremipsum==1.0.5
 mccabe==0.6.1
 mock==4.0.2
@@ -51,7 +52,7 @@ pylint==2.4.4
 pyparsing==2.4.6
 pytest==5.4.0
 python-dateutil==2.8.1
-python-magic==0.4.15
+python-magic-bin==0.4.14
 python-memcached==1.59
 pytz==2019.3
 pywatchman==1.4.1

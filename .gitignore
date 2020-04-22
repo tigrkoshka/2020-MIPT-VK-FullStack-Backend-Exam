@@ -3,3 +3,6 @@ exam/exam/__pycache__/
 exam/groups/__pycache__/
 exam/users/__pycache__/
 exam/hometasks/__pycache__/
+exam/users/migrations/__pycache__/
+exam/groups/migrations/__pycache__/
+exam/hometasks/migrations/__pycache__/
